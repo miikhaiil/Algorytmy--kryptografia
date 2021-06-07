@@ -1,0 +1,15 @@
+C:\Users\Test\source\repos\kryptografia\kryptografia\bin\Debug\kryptografia.exe.config
+C:\Users\Test\source\repos\kryptografia\kryptografia\bin\Debug\kryptografia.exe
+C:\Users\Test\source\repos\kryptografia\kryptografia\bin\Debug\kryptografia.pdb
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\kryptografia.csprojAssemblyReference.cache
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\MainWindow.g.cs
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\App.g.cs
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\kryptografia_MarkupCompile.cache
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\kryptografia_MarkupCompile.lref
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\MainWindow.baml
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\kryptografia.g.resources
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\kryptografia.Properties.Resources.resources
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\kryptografia.csproj.GenerateResource.cache
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\kryptografia.csproj.CoreCompileInputs.cache
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\kryptografia.exe
+C:\Users\Test\source\repos\kryptografia\kryptografia\obj\Debug\kryptografia.pdb

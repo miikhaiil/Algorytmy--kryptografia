@@ -1,0 +1,91 @@
+﻿<Window x:Class="kryptografia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kryptografia"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Background="Gray">
+    <Grid Margin="5" Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Grid.ColumnSpan="4" Fill="DarkGray"></Rectangle>
+        <Rectangle Grid.Row="2" Grid.ColumnSpan="4" Fill="DarkGray"></Rectangle>
+        <Rectangle Grid.Row="4" Grid.ColumnSpan="4" Fill="DarkGray"></Rectangle>
+        <Rectangle Grid.Row="6" Grid.ColumnSpan="4" Fill="DarkGray"></Rectangle>
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <Label>Tekst:</Label>
+            <TextBox Margin="5" Name="Text">CRYPTOGRAPHY</TextBox>
+        </StackPanel>
+        <Label Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">Szyfracja:</Label>
+        <Label Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center">Deszyfracja:</Label>
+        <Label Grid.Row="1" Grid.Column="0">1. Rail fence</Label>
+        <Label Grid.Row="2" Grid.Column="0">2a. Przestawienie macierzowe</Label>
+        <Label Grid.Row="3" Grid.Column="0">2b. Przestawienie macierzowe</Label>
+        <Label Grid.Row="4" Grid.Column="0">2c. Przestawienie macierozwe</Label>
+        <Label Grid.Row="5" Grid.Column="0">3. Szyfr Cezara</Label>
+        <Label Grid.Row="6" Grid.Column="0">3. Szyfrowanie Vigenere’a</Label>
+
+        <TextBox Grid.Row="1" Grid.Column="2" Name="RailFenceCipher" Margin="5" TextWrapping="Wrap"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="2" Name="MatrixACipher" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="2" Name="MatrixBCipher" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="2" Name="MatrixCCipher" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        <TextBox Grid.Row="5" Grid.Column="2" Name="Ceasar" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="2" Name="VigenereCipher" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+
+        <TextBox Grid.Row="1" Grid.Column="3" Name="RailFenceDecipher" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="3" Name="MatrixADecipher" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="3" Name="MatrixBDecipher" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="3" Name="MatrixCDecipher" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        <TextBox Grid.Row="5" Grid.Column="3" Name="CeasarDecipher" Margin="5 " TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="3" Name="VigenereDecipher" Margin="5" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+
+        <StackPanel Margin="5" Grid.Row="1" Grid.Column="1">
+            <Label >Liczba poziomów :</Label>
+            <TextBox Name="Level">3</TextBox>
+        </StackPanel>
+        <StackPanel Margin="5" Grid.Row="3" Grid.Column="1">
+            <Label >Klucz kodujący:</Label>
+            <TextBox  Name="MatrixKeyB">CONVENIENCE</TextBox>
+        </StackPanel>
+        <StackPanel Margin="5" Grid.Row="4" Grid.Column="1">
+            <Label >Klucz kodujący:</Label>
+            <TextBox  Name="MatrixKeyC">CONVENIENCE</TextBox>
+        </StackPanel>
+        <Grid Grid.Row="5" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Name="NumberA">Liczba a:</Label>
+            <Label Grid.Row="0" Grid.Column="1" Name="NumberB">Liczba b:</Label>
+            <TextBox Grid.Row="1" Grid.Column="0" Margin="5" Name ="A">7</TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5" Name ="B">5</TextBox>
+        </Grid>
+        <StackPanel Margin="5" Grid.Row="6" Grid.Column="1">
+            <Label >Klucz kodujący:</Label>
+            <TextBox Name="VigenereKey">BREAK</TextBox>
+        </StackPanel>
+        <Button Grid.Column="3" Grid.Row="7" VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="10" Margin="5" Click="onCipherClick">Szyfruj</Button>
+    </Grid>
+</Window>
